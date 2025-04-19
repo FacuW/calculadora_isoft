@@ -7,8 +7,8 @@ on:
 
 jobs:
     test:
-        name:Testear Calculadora
-        runs-on: ubuntu-latest
+    name:Testear Calculadora
+    runs-on: ubuntu-latest
 
     steps:
         - name: Clonar repositorio
