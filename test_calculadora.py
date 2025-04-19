@@ -12,7 +12,7 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(main.multiplicar(3, 4), 12)
 
     def test_dividir(self):
-        self.assertEqual(main.dividir(10, 2), 5)     
+        self.assertEqual(main.dividir(10, 5), 2)     
 
     def test_dividir_por_cero(self):
         with self.assertRaises(ValueError):
