@@ -7,23 +7,23 @@ on:
 
 jobs:
     test:
-    name: Testear Calculadora
-    runs-on: ubuntu-latest
+        name: Testear Calculadora
+        runs-on: ubuntu-latest
 
-    steps:
-        - name: Clonar repositorio
-          uses: actions/checkout@v3
+        steps:
+          - name: Clonar repositorio
+            uses: actions/checkout@v3
         
-        - name: Configurar Python
-          uses: actions/setup-puthon@v4
-          with:
-              python-version: '3.10'
+          - name: Configurar Python
+            uses: actions/setup-python@v4
+            with:
+                python-version: '3.10'
 
-        - name: Instalar dependencias
-          run: pip install pytest
+          - name: Instalar dependencias
+            run: pip install pytest
         
-        - name: Ejecutar pruebas
-          run: pytest test_calculadora.py
+          - name: Ejecutar pruebas
+            run: pytest test_calculadora.py
         
         
         
