@@ -2,8 +2,8 @@ name: Pruebas de la calculadora
 
 on:
   pull_request:
-    branches:
-      - develop
+      branches:
+        - develop
 
 jobs:
     test:
